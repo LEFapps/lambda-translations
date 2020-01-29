@@ -1,0 +1,15 @@
+service: lambda-translations
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-1
+
+functions:
+  translate:
+    handler: handler.translate
+    events:
+      - http:
+          path: translate
+          method: get
+          cors: true

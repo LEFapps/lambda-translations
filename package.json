@@ -1,0 +1,17 @@
+{
+  "name": "lambda-translations",
+  "version": "0.0.1",
+  "description": "Fetch translations using a Lambda function.",
+  "main": "handler.js",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "serverless deploy",
+    "log": "serverless logs -f translate -t"
+  },
+  "author": "LEF",
+  "license": "MIT"
+}
